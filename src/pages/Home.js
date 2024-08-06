@@ -39,7 +39,7 @@ const Home = () => {
         <div className="smoothies">
           <div className="smoothie-grid">
             {smoothies.map((smoothie) => (
-              <SmoothieCard smoothie={smoothie} />
+              <SmoothieCard key={smoothie.id} smoothie={smoothie} />
             ))}
           </div>
         </div>
